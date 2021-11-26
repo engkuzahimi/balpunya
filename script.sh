@@ -14,6 +14,7 @@ function sendAlert
 
 while true
 do
+    echo $logs
     lastCount=$(wc -c $logs | awk '{print $1}')
     if(($(($lastCount)) > $initCount));
         then
