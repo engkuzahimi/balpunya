@@ -17,7 +17,7 @@ do
     lastCount=$(wc -c $logs | awk '{print $1}')
     if(($(($lastCount)) > $initCount));
         then
-        msg=$ (tail -n 1 $logs) #GetLastLineLog
+        msg= $(tail -n 1 $logs) #GetLastLineLog
         echo $msg > $msg_caption #set Caption / Pesan
         #echo -e "Ada Serangan\n\nServer Time : $(date +"%d %b %Y %T")\n\n"$msg > $msg caption #set Caption / Pesan
 
